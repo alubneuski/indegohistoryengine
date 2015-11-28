@@ -157,7 +157,7 @@ var PingingApp = function() {
 
     self.addTimeStamp = function (data) {
       data.forEach(function (elem) {
-        elem.properties['timeStamp'] = Date();
+        elem.properties['timeStamp'] = new Date();
       });
       return data;
     }
